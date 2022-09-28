@@ -13,7 +13,7 @@ function Item({ item,onUpdateItem,onDeleteItem }) {
       }),
     })
       .then((r) => r.json())
-      .then((updatedItem) => console.log(updatedItem));
+      .then((updatedItem) => onUpdateItem(updatedItem));
 
   }
 
